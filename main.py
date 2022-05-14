@@ -12,7 +12,6 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLineEdit, QVBoxLayout, QHBoxLayout, QFrame, QLabel, \
     QSizePolicy
 
-dd
 class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
