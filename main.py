@@ -5,6 +5,7 @@
 import math
 
 from PyQt5 import QtWidgets
+from PyQt5.QtCore import QTimer
 
 from PythonCoolChart import *
 
@@ -30,7 +31,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.widget.setLayout(self.lay1)
         self.setCentralWidget(self.widget)
 
-
         self.chart.setMinimumWidth(500)
         s1 = Series(self.chart)
         s2 = Series(self.chart)
@@ -39,8 +39,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.chart.addSeries(s1)
         self.chart.addSeries(s2)
         self.chart.setLimits(0, 10, 0, 10)
-
-        #self.chart.setOuterRectBrush(QBrush(Qt.green))
 
         for i in range(0, 500):
             s1.addXY(i, math.sin(i*0.1))
