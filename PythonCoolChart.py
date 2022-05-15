@@ -109,7 +109,7 @@ class Series:
         return self.pen
 
     def getID(self):
-        return id
+        return self.id
 
     def setVisible(self, v):
         self.visible = v
