@@ -72,3 +72,4 @@ if __name__ == '__main__':
     # pyplot.show()
 
 
+#pyinstaller --onefile main.py
